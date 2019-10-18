@@ -1,4 +1,3 @@
-//#include<stdio.h>
 #include<lpc21xx.h>  //including lpc header file
 #define CR 0x0D      // enter ascii value
 void init_serial();  // declaring function to initialze   
