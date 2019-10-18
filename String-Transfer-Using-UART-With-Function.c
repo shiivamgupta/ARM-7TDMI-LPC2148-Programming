@@ -6,17 +6,23 @@ int getchar(void);    // declairng function to receive
  
    int main(void)
 	 {
-	   char *ptr="Welcome to CDAC ACTS\n\n\r"; // initialize the string to transmit
+	   //char *ptr="Welcome to CDAC ACTS\n\n\r"; // initialize the string to transmit
+		char *str1="Welcome to Electronics Wizardry\nPlease Continue typing below, to exit, hit \"Ctrl+Z\":\n"; 
+		char *str2="\nEXITING....";
 		 VPBDIV=0x02;  // set VPBDIV to divide 60MHZ by 2
 		  init_serial(); // call function init_serial
 			while(1)  // continous loop
 			{
-			    while(*ptr) 
+			    while(*str1) 
 					{
-					putchar(*ptr++);
+					putchar(*str1++);
+					}
+					while(*str2) 
+					{
+					putchar(*str2++);
 					}
 					putchar(getchar());
-					}
+			}
 					
 					
 		return 0;
@@ -48,4 +54,3 @@ int getchar(void);    // declairng function to receive
 				while(!(U1LSR & 0x01));
 			  	return U1RBR;
 				}
-					
