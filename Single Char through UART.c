@@ -1,4 +1,4 @@
-#include	<lpc21xx.h>
+#include<lpc21xx.h>
 
 int main()
 {		//PINSEL0 |= ((1<<16) | (1<<18));		//enable UART1 function
