@@ -19,9 +19,9 @@ int main(void)
 	{		
 			IOSET0=0xffffffff;
 			IOSET1=0xffffffff;
-	    mydelay();
-		  IOCLR0=0xffffffff;
+	    		my_delay();
+		  	IOCLR0=0xffffffff;
 			IOCLR1=0xffffffff;
-			mydelay();
+			my_delay();
 	}	
 }
